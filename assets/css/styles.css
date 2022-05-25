@@ -435,13 +435,13 @@ img{
     width: 100%;
 }
 .skills__js{
-    width: 70%;
+    width: 75%;
 }
 .skills__jquery{
     width: 75%;
 }
 .skills__bootstrap{
-    width: 85%;
+    width: 90%;
 }
 .skills__php{
     width: 80%;
@@ -452,8 +452,8 @@ img{
 .skills__mysql{
     width: 80%;
 }
-.skills__node,.skills__mongo,.skills__express{
-    width: 50%;
+.skills__node,.skills__mongo,.skills__express,.skills__vue{
+    width: 65%;
 }
 .skills__open .skills__list{
     height: max-content;
