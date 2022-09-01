@@ -314,6 +314,11 @@ img{
 .home__scroll-arrow{
     font-size: 1.25rem;
 }
+
+.home__img img{
+    border-radius: 50%;
+    width: 90%;
+}
 /*==================== BUTTONS ====================*/
 .button{
     display: inline-block;
@@ -832,7 +837,13 @@ img{
         order: 1;
         justify-self: center;
     }
-    .about__container,.skills__container,.portfolio__content,.contact__container,.footer__container{
+    .about__container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .skills__container,.portfolio__content,.footer__container{
         grid-template-columns: repeat(2,1fr);
     }
     .qualification__sections{
@@ -903,13 +914,13 @@ img{
         width: 350px;
     }
     .about__description{
-        text-align: initial;
+        text-align: ce;
     }
     .about__info{
         justify-content: space-between;
     }
     .about__buttons{
-        justify-content: initial;
+        justify-content: center;
     }
     .qualification__tabs{
         justify-content: center;
