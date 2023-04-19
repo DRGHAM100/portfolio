@@ -462,7 +462,15 @@ img{
 }
 
 .skills__vue{
-    width: 65%;
+    width: 80%;
+}
+
+.skills__Inertia{
+    width: 80%;
+}
+
+.skills__wordpress{
+    width: 75%;
 }
 
 .skills__open .skills__list{
