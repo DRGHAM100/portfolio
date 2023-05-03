@@ -448,6 +448,9 @@ img{
 .skills__bootstrap{
     width: 90%;
 }
+.skills__tailwind{
+    width: 75%;
+}
 .skills__php{
     width: 80%;
 }
