@@ -457,8 +457,8 @@ img{
 .skills__laravel{
     width: 80%;
 }
-.skills__mysql{
-    width: 80%;
+.skills__mysql, .skills__postgree{
+    width: 90%;
 }
 .skills__node,.skills__mongo,.skills__express{
     width: 78%;
