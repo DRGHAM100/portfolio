@@ -17,7 +17,7 @@ const CV = () => {
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           animate="show"
-          className="mt-16 mb-4 text-2xl font-bold md:mt-10 sm:text-2xl md:text-3xl text-white/80"
+          className="mt-16 mb-4 text-3xl font-bold md:mt-10 sm:text-4xl xl:text-5xl text-white/80"
         >
           My <span className="text-accent">CV</span>
         </motion.h2>

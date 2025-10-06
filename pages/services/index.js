@@ -59,7 +59,7 @@ const Services = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="grid grid-cols-1 gap-2 mt-14 md:gap-4 lg:mt-0 md:mt-12 md:grid-cols-1 lg:grid-cols-3"
+          className="grid grid-cols-1 gap-2 mt-10 md:gap-4 lg:mt-0 md:mt-12 md:grid-cols-1 lg:grid-cols-3"
         >
           {servicesData.map((service, i) => (
             <div
