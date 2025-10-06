@@ -50,7 +50,7 @@ const Contact = () => {
           animate="show"
           className="max-w-[900px] mb-7 lg:mb-12 text-sm text-white/70 sm:text-base md:text-lg"
         >
-          I'm always excited to collaborate on new projects, answer any questions, or just have a chat about ideas. Whether you have a business inquiry, a creative project, or simply want to say hello, feel free to reach out. I’ll get back to you as soon as possible.
+          I&apos;m always excited to collaborate on new projects, answer any questions, or just have a chat about ideas. Whether you have a business inquiry, a creative project, or simply want to say hello, feel free to reach out. I&rsquo;ll get back to you as soon as possible.
         </motion.p>
 
 

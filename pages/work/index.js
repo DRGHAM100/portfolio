@@ -33,6 +33,7 @@ import { FiMaximize } from "react-icons/fi";
 // projects data
 const projects = [
   {
+    id: 1,
     title: "E-Commerce",
     description:
       "A modern e-commerce platform for managing products, orders, and payments with an intuitive user interface. Part of the source code is available on GitHub.",
@@ -42,6 +43,7 @@ const projects = [
     // codeLink: "#",
   },
   {
+    id: 2,
     title: "SANN ERP",
     description:
       "A comprehensive ERP platform with accounting entries, invoicing, maintenance management, and analytical dashboards for business operations.",
@@ -50,6 +52,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
+    id: 3,
     title: "Car Rental",
     description:
       "A car rental management dashboard with invoicing, fleet maintenance, and real-time integration for Salik and traffic fines synchronization.",
@@ -58,6 +61,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
+    id: 4,
     title: "Instagram Clone",
     description:
       "A mini Instagram clone with user authentication, post sharing, likes, comments, and real-time chat functionality. Built for learning and demonstration purposes.",
@@ -68,6 +72,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/Clone-Instagram-Laravel-NodeJs-MySQL",
   },
   {
+    id: 5,
     title: "Alraya Poet",
     description:
       "A competition platform for poets in Saudi Arabia, featuring user registration, submission management, voting, and results tracking. Built with Laravel, MySQL, and Bootstrap.",
@@ -76,6 +81,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
+    id: 6,
     title: "Facebook Clone",
     description:
       "A mini Facebook clone featuring user authentication, post sharing, likes, comments, and real-time interactions. Built with Laravel, Vue.js, and Inertia.js.",
@@ -84,6 +90,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiInertia />, <FaVuejs/>, <SiMysql />],
   },
   {
+    id: 7,
     title: "Twitter Clone",
     description:
       "A design-only Twitter clone built with Vue.js and Tailwind CSS, showcasing UI components and layout for demonstration purposes.",
@@ -93,6 +100,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/Clone-Twitter",
   },
   {
+    id: 8,
     title: "Crypto",
     description:
       "A simple crypto dashboard displaying current cryptocurrency prices and latest news. Built with React and Ant Design for a responsive and interactive interface.",
@@ -103,6 +111,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/simple-react-crypto-app",
   },
   {
+    id: 9,
     title: "eShop",
     description:
       "A simple e-commerce platform with product listing, shopping cart, and online checkout. Built with React for a responsive and interactive user experience.",
@@ -113,6 +122,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/simple-react-e-shop",
   },
   {
+    id: 10,
     title: "Shawarma",
     description:
       "A website for an Arabic restaurant in Germany, featuring menu display, online ordering, and chef screens for managing orders. Built with Laravel, MySQL, and Bootstrap.",
@@ -121,6 +131,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
+    id: 11,
     title: "PQS",
     description:
       "A quality management system for monitoring, tracking, and improving business processes. Built with Laravel, MySQL, and Bootstrap for efficiency and scalability.",
@@ -129,6 +140,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
+    id: 12,
     title: "Wedding Invitations System",
     description:
       "A wedding invitations management system that sends invitations via WhatsApp and email, allowing guests to RSVP with accept or decline options. Built with Laravel, MySQL, and Bootstrap.",
@@ -137,6 +149,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
+    id: 13,
     title: "WP restaurant",
     description:
       "A restaurant website built on WordPress, featuring responsive design, menu display, and online ordering via Gloria Food plugin. Designed with Elementor for easy customization.",
@@ -145,6 +158,7 @@ const projects = [
     technologies: [<FaWordpress />],
   },
   {
+    id: 14,
     title: "Pharma",
     description:
       "A small pharmacy management system (POS) for tracking inventory, sales, and prescriptions. Built with Laravel, MySQL, and Bootstrap for efficiency and scalability.",
@@ -220,7 +234,7 @@ const Work = () => {
             }
           `}</style>
           {projects.map((project, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={project.id || index}>
               <div className="flex flex-col items-center justify-between gap-6 px-4 transition-all duration-300 py-9 xl:py-10 xl:flex-row bg-white/5 rounded-2xl hover:bg-white/10">
                 
                 {/* Left Image */}
