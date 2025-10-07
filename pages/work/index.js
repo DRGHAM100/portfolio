@@ -36,11 +36,11 @@ const projects = [
     id: 1,
     title: "E-Commerce",
     description:
-      "A modern e-commerce platform for managing products, orders, and payments with an intuitive user interface. Part of the source code is available on GitHub.",
+      "A modern e-commerce platform for managing products, orders, and payments with an intuitive user interface. (Part of the source code) is available on GitHub.",
     image: "/projects/E-Commerce.jpeg",
     imageFullSize: "/projects/full/E-Commerce.png",
     technologies: [<FaLaravel />, <SiMysql />],
-    // codeLink: "#",
+    codeLink: "https://github.com/DRGHAM100/E-Commerce",
   },
   {
     id: 2,
@@ -62,17 +62,27 @@ const projects = [
   },
   {
     id: 4,
+    title: "SRT RENT A CAR",
+    description: 
+    "This website is for SRT, one of the leading car rental companies in the UAE.",
+    image: "/projects/srt.jpeg",
+    imageFullSize: "/projects/full/srt.jpeg",
+    technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
+    liveLink: "https://srt-car.com"
+  },
+  {
+    id: 5,
     title: "Instagram Clone",
     description:
       "A mini Instagram clone with user authentication, post sharing, likes, comments, and real-time chat functionality. Built for learning and demonstration purposes.",
     image: "/projects/instagram.jpeg",
     imageFullSize: "/projects/full/instagram.png",
-    video: "/project/videos/instagram.mp4",
+    video: "/projects/videos/instagram.mp4",
     technologies: [<FaLaravel />, <FaNodeJs />, <SiMysql />],
     codeLink: "https://github.com/DRGHAM100/Clone-Instagram-Laravel-NodeJs-MySQL",
   },
   {
-    id: 5,
+    id: 6,
     title: "Alraya Poet",
     description:
       "A competition platform for poets in Saudi Arabia, featuring user registration, submission management, voting, and results tracking. Built with Laravel, MySQL, and Bootstrap.",
@@ -81,7 +91,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Facebook Clone",
     description:
       "A mini Facebook clone featuring user authentication, post sharing, likes, comments, and real-time interactions. Built with Laravel, Vue.js, and Inertia.js.",
@@ -90,7 +100,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiInertia />, <FaVuejs/>, <SiMysql />],
   },
   {
-    id: 7,
+    id: 8,
     title: "Twitter Clone",
     description:
       "A design-only Twitter clone built with Vue.js and Tailwind CSS, showcasing UI components and layout for demonstration purposes.",
@@ -100,7 +110,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/Clone-Twitter",
   },
   {
-    id: 8,
+    id: 9,
     title: "Crypto",
     description:
       "A simple crypto dashboard displaying current cryptocurrency prices and latest news. Built with React and Ant Design for a responsive and interactive interface.",
@@ -111,7 +121,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/simple-react-crypto-app",
   },
   {
-    id: 9,
+    id: 10,
     title: "eShop",
     description:
       "A simple e-commerce platform with product listing, shopping cart, and online checkout. Built with React for a responsive and interactive user experience.",
@@ -122,7 +132,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/simple-react-e-shop",
   },
   {
-    id: 10,
+    id: 11,
     title: "Shawarma",
     description:
       "A website for an Arabic restaurant in Germany, featuring menu display, online ordering, and chef screens for managing orders. Built with Laravel, MySQL, and Bootstrap.",
@@ -131,7 +141,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
-    id: 11,
+    id: 12,
     title: "PQS",
     description:
       "A quality management system for monitoring, tracking, and improving business processes. Built with Laravel, MySQL, and Bootstrap for efficiency and scalability.",
@@ -140,7 +150,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
-    id: 12,
+    id: 13,
     title: "Wedding Invitations System",
     description:
       "A wedding invitations management system that sends invitations via WhatsApp and email, allowing guests to RSVP with accept or decline options. Built with Laravel, MySQL, and Bootstrap.",
@@ -149,7 +159,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
-    id: 13,
+    id: 14,
     title: "WP restaurant",
     description:
       "A restaurant website built on WordPress, featuring responsive design, menu display, and online ordering via Gloria Food plugin. Designed with Elementor for easy customization.",
@@ -158,13 +168,13 @@ const projects = [
     technologies: [<FaWordpress />],
   },
   {
-    id: 14,
+    id: 15,
     title: "Pharma",
     description:
       "A small pharmacy management system (POS) for tracking inventory, sales, and prescriptions. Built with Laravel, MySQL, and Bootstrap for efficiency and scalability.",
     image: "/projects/pharma.jpeg",
     imageFullSize: "/projects/full/pharma.png",
-    video: "/project/videos/POS_Pharamcy.mp4",
+    video: "/projects/videos/POS_Pharamcy.mp4",
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
     codeLink: "https://github.com/DRGHAM100/POS-Pharmacy-System",
   }
@@ -173,7 +183,25 @@ const projects = [
 const Work = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImage, setLightboxImage] = useState("");
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState("");
 
+  const handleVideoClick = (videoUrl) => {
+    setCurrentVideo(videoUrl); // Set the current video to be displayed
+    setVideoModalOpen(true); // Open the video modal
+  };
+
+  const closeModal = () => {
+    setVideoModalOpen(false); // Close the video modal
+    setCurrentVideo(""); // Reset the current video
+  };
+
+  const handleOutsideClick = (e) => {
+    // Check if the clicked target is the modal overlay (background)
+    if (e.target.classList.contains("modal-overlay")) {
+      closeModal(); // Close the modal if the user clicks outside
+    }
+  };
   return (
     <div className="h-full py-32 text-center bg-primary/30 xl:text-left">
       {/* Section Title */}
@@ -204,14 +232,7 @@ const Work = () => {
           className="mySwiper"
         >
           <style jsx global>{`
-            @media (min-width: 1000px) {
-              .swiper-button-next,
-              .swiper-button-prev{
-                display:none;
-              }
-            }
-            
-            @media (max-width: 900px) {
+            @media (max-width: 1200px) {
             
               .swiper-button-next,
               .swiper-button-prev {
@@ -309,22 +330,37 @@ const Work = () => {
                       </a>
                     )}
                     
-                    { project.video && (
-                      <a
-                        href={project.video}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    {project.video && (
+                      <button
+                        onClick={() => handleVideoClick(project.video)}
                         className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white transition rounded-full bg-white/10 hover:bg-accent/40"
                       >
-                        <FaVideo /> Video
-                      </a>
-                    ) }
+                        <FaVideo /> Watch Video
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
+        {/* Video Modal */}
+        {videoModalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+            <div className="relative w-11/12 p-4 bg-white rounded-lg md:w-1/2">
+              <button
+                onClick={closeModal}
+                className="absolute z-50 px-4 py-2 text-white bg-black rounded-full top-2 right-2"
+              >
+                X
+              </button>
+              <video controls className="w-full h-auto">
+                <source src={currentVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        )}
       </motion.div>
 
       {/* Lightbox */}
