@@ -27,7 +27,7 @@ import {
   FaVuejs,
   FaBootstrap
 } from "react-icons/fa";
-import { SiTailwindcss, SiMongodb, SiMysql, SiInertia, SiThreeDotJs, SiGreensock } from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiMysql, SiInertia, SiGreensock } from "react-icons/si";
 import { FiMaximize } from "react-icons/fi";
 
 // projects data
@@ -49,7 +49,7 @@ const projects = [
       "An immersive 3D website inspired by Apple’s product design. Built with React, Three.js, and GSAP to deliver smooth animations, interactive 3D models, and a premium user experience that reflects Apple's minimalist aesthetic.",
     image: "/projects/MacBook.jpeg",
     imageFullSize: "/projects/full/MacBook.png",
-    technologies: [<FaReact />, <SiThreeDotJs />, <SiGreensock />],
+    technologies: [<FaReact />, <SiGreensock />],
     codeLink: "https://github.com/DRGHAM100/Apple-Website",
     liveLink: "https://apple-website-33cx.onrender.com"
   },
