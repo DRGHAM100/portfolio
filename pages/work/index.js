@@ -27,7 +27,7 @@ import {
   FaVuejs,
   FaBootstrap
 } from "react-icons/fa";
-import { SiTailwindcss, SiMongodb, SiMysql, SiInertia } from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiMysql, SiInertia, SiThreeDotJs, SiGreensock } from "react-icons/si";
 import { FiMaximize } from "react-icons/fi";
 
 // projects data
@@ -44,6 +44,17 @@ const projects = [
   },
   {
     id: 2,
+    title: "MacBook Pro Showcase",
+    description:
+      "An immersive 3D website inspired by Apple’s product design. Built with React, Three.js, and GSAP to deliver smooth animations, interactive 3D models, and a premium user experience that reflects Apple's minimalist aesthetic.",
+    image: "/projects/MacBook.jpeg",
+    imageFullSize: "/projects/full/MacBook.png",
+    technologies: [<FaReact />, <SiThreeDotJs />, <SiGreensock />],
+    codeLink: "https://github.com/DRGHAM100/Apple-Website",
+    liveLink: "https://apple-website-33cx.onrender.com"
+  },
+  {
+    id: 3,
     title: "SANN ERP",
     description:
       "A comprehensive ERP platform with accounting entries, invoicing, maintenance management, and analytical dashboards for business operations.",
@@ -52,7 +63,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Car Rental",
     description:
       "A car rental management dashboard with invoicing, fleet maintenance, and real-time integration for Salik and traffic fines synchronization.",
@@ -61,7 +72,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
-    id: 4,
+    id: 5,
     title: "SRT RENT A CAR",
     description: 
     "This website is for SRT, one of the leading car rental companies in the UAE.",
@@ -71,7 +82,7 @@ const projects = [
     liveLink: "https://srt-car.com"
   },
   {
-    id: 5,
+    id: 6,
     title: "Instagram Clone",
     description:
       "A mini Instagram clone with user authentication, post sharing, likes, comments, and real-time chat functionality. Built for learning and demonstration purposes.",
@@ -82,7 +93,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/Clone-Instagram-Laravel-NodeJs-MySQL",
   },
   {
-    id: 6,
+    id: 7,
     title: "Alraya Poet",
     description:
       "A competition platform for poets in Saudi Arabia, featuring user registration, submission management, voting, and results tracking. Built with Laravel, MySQL, and Bootstrap.",
@@ -91,7 +102,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Facebook Clone",
     description:
       "A mini Facebook clone featuring user authentication, post sharing, likes, comments, and real-time interactions. Built with Laravel, Vue.js, and Inertia.js.",
@@ -100,7 +111,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiInertia />, <FaVuejs/>, <SiMysql />],
   },
   {
-    id: 8,
+    id: 9,
     title: "Twitter Clone",
     description:
       "A design-only Twitter clone built with Vue.js and Tailwind CSS, showcasing UI components and layout for demonstration purposes.",
@@ -110,7 +121,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/Clone-Twitter",
   },
   {
-    id: 9,
+    id: 10,
     title: "Crypto",
     description:
       "A simple crypto dashboard displaying current cryptocurrency prices and latest news. Built with React and Ant Design for a responsive and interactive interface.",
@@ -121,7 +132,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/simple-react-crypto-app",
   },
   {
-    id: 10,
+    id: 11,
     title: "eShop",
     description:
       "A simple e-commerce platform with product listing, shopping cart, and online checkout. Built with React for a responsive and interactive user experience.",
@@ -132,7 +143,7 @@ const projects = [
     codeLink: "https://github.com/DRGHAM100/simple-react-e-shop",
   },
   {
-    id: 11,
+    id: 12,
     title: "Shawarma",
     description:
       "A website for an Arabic restaurant in Germany, featuring menu display, online ordering, and chef screens for managing orders. Built with Laravel, MySQL, and Bootstrap.",
@@ -141,7 +152,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
-    id: 12,
+    id: 13,
     title: "PQS",
     description:
       "A quality management system for monitoring, tracking, and improving business processes. Built with Laravel, MySQL, and Bootstrap for efficiency and scalability.",
@@ -150,7 +161,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
-    id: 13,
+    id: 14,
     title: "Wedding Invitations System",
     description:
       "A wedding invitations management system that sends invitations via WhatsApp and email, allowing guests to RSVP with accept or decline options. Built with Laravel, MySQL, and Bootstrap.",
@@ -159,7 +170,7 @@ const projects = [
     technologies: [<FaLaravel />, <SiMysql />, <FaBootstrap />, ],
   },
   {
-    id: 14,
+    id: 15,
     title: "WP restaurant",
     description:
       "A restaurant website built on WordPress, featuring responsive design, menu display, and online ordering via Gloria Food plugin. Designed with Elementor for easy customization.",
@@ -168,7 +179,7 @@ const projects = [
     technologies: [<FaWordpress />],
   },
   {
-    id: 15,
+    id: 16,
     title: "Pharma",
     description:
       "A small pharmacy management system (POS) for tracking inventory, sales, and prescriptions. Built with Laravel, MySQL, and Bootstrap for efficiency and scalability.",
